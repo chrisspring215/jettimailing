@@ -1,0 +1,52 @@
+.container
+{
+	height: 100vh;
+	background: url(../img/background-image.png) no-repeat 40% center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-color: $jetti-red;
+  	background-blend-mode: multiply;	
+}
+
+main
+{
+	h1
+	{
+		font-size: 6vw;
+		font-family: $red-rock;
+		color: $jetti-white;
+		font-weight: bold;
+	}
+
+	p
+	{
+		color: $jetti-white;
+		font-weight: bold;
+		font-size: 5vw;
+		line-height: 6vw;
+	}
+
+	label
+	{
+		color: $jetti-white;
+		font-weight: bold;
+		font-size: 5vw;
+		line-height: 6vw;
+	}
+
+	.button
+	{
+		border: 3px solid $jetti-red;
+		background-color: $jetti-white - 50;
+		color: $jetti-red;
+
+		&:hover
+		{
+			border: 3px solid $jetti-white;
+			background-color: $jetti-red;
+			color: $jetti-white;
+		}
+	}
+}
