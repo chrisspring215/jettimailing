@@ -6,12 +6,22 @@
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	background-color: $jetti-red;
-  	background-blend-mode: multiply;	
+
+  	background-color: #444;
+  	background-blend-mode: overlay;
+
 }
 
 main
 {
+
+	.mainbackground
+	{
+		background-color: rgba(13, 13, 13, .5);
+		padding-bottom: 2em;
+		margin-top: 2em;
+	}
+
 	h1
 	{
 		font-size: 6vw;
@@ -38,15 +48,43 @@ main
 
 	.button
 	{
-		border: 3px solid $jetti-red;
-		background-color: $jetti-white - 50;
-		color: $jetti-red;
+		border: 3px solid $jetti-white;
+		background-color: $jetti-red;
+		color: $jetti-white;
+		margin-bottom: 0;
+		padding-top: .5em;
+		padding-bottom: .5em;
+
+		&:active
+		{
+			background-color: $jetti-red - 50;
+		}
 
 		&:hover
 		{
-			border: 3px solid $jetti-white;
-			background-color: $jetti-red;
-			color: $jetti-white;
+			background-color: $jetti-red - 50;
 		}
+
 	}
+
+	.ss-question-list
+	{
+	margin: 0 0 20px 0;
+	}
+	input, select
+	{
+		margin-bottom: .5em;
+	}
+
+	select
+	{
+		color: #444;
+		font-size: 4vw;
+	}
+
+	input[type="submit"]
+	{
+		margin-top: 1em;
+	}
+
 }
