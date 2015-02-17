@@ -10393,34 +10393,28 @@ th {
   background-blend-mode: overlay;
 }
 
-/* line 19, ../scss/_custom.scss */
-main .mainbackground {
-  background-color: rgba(13, 13, 13, 0.5);
-  padding-bottom: 2em;
-  margin-top: 2em;
-}
-/* line 26, ../scss/_custom.scss */
+/* line 24, ../scss/_custom.scss */
 main h1 {
   font-size: 6vw;
   font-family: "Headland One", serif;
   color: white;
   font-weight: bold;
 }
-/* line 34, ../scss/_custom.scss */
+/* line 32, ../scss/_custom.scss */
 main p {
   color: white;
   font-weight: bold;
   font-size: 5vw;
   line-height: 6vw;
 }
-/* line 42, ../scss/_custom.scss */
+/* line 40, ../scss/_custom.scss */
 main label {
   color: white;
   font-weight: bold;
   font-size: 5vw;
   line-height: 6vw;
 }
-/* line 50, ../scss/_custom.scss */
+/* line 48, ../scss/_custom.scss */
 main .button {
   border: 3px solid white;
   background-color: #b01a27;
@@ -10429,28 +10423,34 @@ main .button {
   padding-top: .5em;
   padding-bottom: .5em;
 }
-/* line 59, ../scss/_custom.scss */
+/* line 57, ../scss/_custom.scss */
 main .button:active {
   background-color: #7e0000;
 }
-/* line 64, ../scss/_custom.scss */
+/* line 62, ../scss/_custom.scss */
 main .button:hover {
   background-color: #7e0000;
 }
-/* line 71, ../scss/_custom.scss */
+/* line 69, ../scss/_custom.scss */
 main .ss-question-list {
   margin: 0 0 20px 0;
 }
-/* line 75, ../scss/_custom.scss */
+/* line 73, ../scss/_custom.scss */
 main input, main select {
   margin-bottom: .5em;
 }
-/* line 80, ../scss/_custom.scss */
+/* line 78, ../scss/_custom.scss */
 main select {
   color: #444;
   font-size: 4vw;
 }
-/* line 86, ../scss/_custom.scss */
+/* line 84, ../scss/_custom.scss */
 main input[type="submit"] {
   margin-top: 1em;
+}
+/* line 89, ../scss/_custom.scss */
+main .socico {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
 }

@@ -17,9 +17,7 @@ main
 
 	.mainbackground
 	{
-		background-color: rgba(13, 13, 13, .5);
-		padding-bottom: 2em;
-		margin-top: 2em;
+
 	}
 
 	h1
@@ -85,6 +83,13 @@ main
 	input[type="submit"]
 	{
 		margin-top: 1em;
+	}
+
+	.socico
+	{
+		color: white;
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 
 }
