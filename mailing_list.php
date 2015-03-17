@@ -6,7 +6,7 @@ $contact_month = $_POST['contact_month'];
 $contact_day = $_POST['contact_day'];
 $contact_year = $_POST['contact_year'];
 $to = 'chris@spring215.com';
-$subject = 'New Email Contact:' . $contact_name;
+$subject = 'New Red Rock Email Contact:' . $contact_name;
 
 $message = 'CONTACT NAME: ' . $contact_name . "\n" . 'EMAIL: ' . $contact_email . "\n" . 'BIRTHDAY: ' . $contact_month . " " . $contact_day . ',' .  $contact_year;
 
