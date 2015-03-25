@@ -1,7 +1,22 @@
+body
+{
+	background-color: #333;
+	background: url(../img/background-image.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
+
 .container
 {
+	/*
 	height: 100vh;
-	background: url(../img/background-image.jpg) no-repeat center center fixed; 
+	width: auto;
+	background: url(../img/background-image.jpg) no-repeat center center fixed;
+
+	
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -10,6 +25,8 @@
   	background-color: #444;
   	background-blend-mode: overlay;
 
+  	position: fixed !important;
+	*/
 }
 
 main
@@ -22,7 +39,7 @@ main
 
 	h1
 	{
-		font-size: 6vw;
+		font-size: 1.25em;
 		font-family: $red-rock;
 		color: $jetti-white;
 		font-weight: bold;
@@ -32,16 +49,16 @@ main
 	{
 		color: $jetti-white;
 		font-weight: bold;
-		font-size: 5vw;
-		line-height: 6vw;
+		font-size: 1.15em;
+		line-height: 1.25em;
 	}
 
 	label
 	{
 		color: $jetti-white;
 		font-weight: bold;
-		font-size: 5vw;
-		line-height: 6vw;
+		font-size: 1.15em;
+		line-height: 1.25em;
 	}
 
 	.button
@@ -76,8 +93,8 @@ main
 
 	select
 	{
-		color: #444;
-		font-size: 4vw;
+		color: #888;
+		font-size: .75em;
 	}
 
 	input[type="submit"]
@@ -92,4 +109,15 @@ main
 		font-weight: 700;
 	}
 
+}
+
+.button.disabled
+{
+	background-color: black;
+	border: 3px solid red;
+	margin-top: 1em;
+}
+.button
+{
+	margin-top: 1em;
 }
