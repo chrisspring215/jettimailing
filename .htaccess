@@ -1,0 +1,46 @@
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+# Or, compress certain file types by extension:
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^jettisystems.com [NC]
+RewriteRule ^(.*)$ http://www.jettisystems.com/$1 [L,R=301]
+
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+
+# Operation Frozen Ivan
+SetEnvIfNoCase Referer darodar.com spambot=yes
+Order allow,deny
+Allow from all
+Deny from env=spambot
+
+# Operation Milk Shake
+SetEnvIfNoCase Referer semalt.semalt.com spambot=yes
+Order allow,deny
+Allow from all
+Deny from env=spambot
+
+# Operation Button-pusher
+SetEnvIfNoCase Referer buttons-for-website.com spambot=yes
+Order allow,deny
+Allow from all
+Deny from env=spambot
+
+# Operation i-hate-buttons
+SetEnvIfNoCase Referer simple-share-buttons.com spambot=yes
+Order allow,deny
+Allow from all
+Deny from env=spambot
