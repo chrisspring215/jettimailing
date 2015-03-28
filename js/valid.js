@@ -1,5 +1,6 @@
 function valid()
 {
+
 	var firstNameField =  document.getElementById('firstNameField');
 	var lastNameField =  document.getElementById('lastNameField');
 	var emailField =  document.getElementById('emailField');
